@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini Project 2</title>
+
+    <link rel="stylesheet" href="style.css" /> 
+
+    <!-- Your code --
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"></script>
+
+    <script defer src="script.js"></script> -->
+    
+  </head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h1></h1>
+        
+        <div class ="viz">
+            <script type='text/javascript' src='https://prod-useast-a.online.tableau.com/javascripts/api/viz_v1.js'></script>
+            <div class='tableauPlaceholder' style='width: 1016px; height: 991px;'>
+                <object class='tableauViz' width='1016' height='800' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fprod-useast-a.online.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='&#47;t&#47;jjmoon132' />
+                    <param name='name' value='Vis-Project-2&#47;Story1' />
+                    <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                    <param name='showAppBanner' value='false' />
+                </object>
+            </div>
+            <a href="movies_movies.csv">Dataset Link</a>
+        </div>
+        
+        <div class="row">
+            <div class="column left">
+                <h2>Dataset Selection</h2>
+                <p>In choosing a dataset to analyze we wanted to pick a topic that is both interesting and applicable to all. We decided to use data on movies from (SOURCE). Although we’ve all watched a movie at one point or another, there are many trends about different genres, distributors, and movie performances that the average person is not likely to be aware of. This dataset provides insight on many of these relationships, trends, and information.</p>
+            </div>
+            <div class="column right">
+                <br>
+                <img src="dataImg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <h2>Data Filtering</h2>
+                <p>Before diving into the data, we looked through to see if there were any missing values that would impact our analysis. We found that data prior to 1970 and after 2010 was lacking, so we decided to focus on the time period in between these two years, since it contains the most data.</p>
+                <p>We also found that some of the data for the US DVD Sales and the movie Running Time was missing, so we were careful with using this data in our analysis. Instead, we chose to focus our analysis on the data for the movie genres, release date, distributors, IMDB rating, US Gross, and Worldwide Gross.</p>
+            </div>
+            <div class="column right">
+                <img src="filter.png" height="400"width="300">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <h2>Visualization Generation</h2>
+                <p>We first chose to plot the number of movies in each major drama against time so that we could see how the most common movie genres have changed throughout the years. As expected, there is an increase in the number of overall movies, starting around 1993. Additionally, drama and comedy movies were consistently the most common, since they had the largest number of movies year after year.</p>
+            </div>
+            <div class="column right">
+                <img src="chart1.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <p>The results sparked a curiosity about how different movie genres perform, in terms of earnings. We then decided to compare different movie genres and their total US Gross values. Again, we see that drama and comedy are two of the best performing movie genres, in addition to action and adventure.</p>
+            </div>
+            <div class="column right">
+                <img src="chart2.png">
+            </div>
+        </div> 
+
+        <div class="row">
+            <div class="column left">
+                <p>Next, the data around production budgets was intriguing, since we would expect recent movies to have different budgets than older movies. We decided to analyze the change in production budgets by plotting the sum of the production budgets each year. We see that starting around 1994, there was a dramatic increase in production budgets. We also found that movie productions appear to have peaked in 2005, with a sum of over $7 billion.</p>
+            </div>
+            <div class="column right">
+                <img src="chart3.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <p>Lastly, we decided to dive deeper into the US Gross and Worldwide Gross data. We first decided to compare the IMDB ratings to the US Gross data. Then, we broke down data even more by splitting the values up based on the movie genres. When analyzing the visualization, we see that the highest IMDB rated genre actually has the lowest average US Gross. The highest average US Gross had a IMDB rating that falls roughly in the middle of the the range of all of the genres. We can conclude that there is minimal relationship between IMDB ratings and US Gross data of different movie genres. </p>
+            </div>
+            <div class="column right">
+                <img src="chart4.png" height="400" width="500">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
